@@ -1,0 +1,35 @@
+import time
+
+struct MyPair:
+    var first: Int
+    var second: Int
+
+    fn __init__(inout self, first: Int, second: Int):
+        self.first = first
+        self.second = second
+
+    fn dump(self):
+        print(self.first, self.second)
+
+fn DoNothing(poop: String) -> String:
+    return poop
+
+fn sum_up_to(sumTo: Int) -> Int:
+    var sum: int = 0
+    for i in range(sumTo):
+        sum += i
+    return sum
+
+def main():
+    print(DoNothing("69"))
+    print("testing structs")
+    pairs = MyPair(1, 2)
+    pairs.dump()
+
+    # timing sum
+    var start_time: float32 = time.time()
+    var sum: Int = sum_up_to(1000000)
+    var end_time: Float32 = time.time()
+    var elapsed_time: Float32 = end_time - start_time
+    print(sum)
+    print(elapsed_time)
