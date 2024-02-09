@@ -21,7 +21,7 @@ fn sum_up_to(sumTo: Int) -> Int:
 def main():
     print(DoNothing("69"))
     print("testing structs")
-    pairs = MyPair(1, 2)
+    var pairs: String = MyPair(1, 2)
     pairs.dump()
 
     var sum: Int = sum_up_to(1000000)
