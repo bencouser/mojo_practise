@@ -1,0 +1,30 @@
+struct MyPair:
+    var first: Int
+    var second: Int
+
+    fn __init__(inout self, first: Int, second: Int):
+        self.first = first
+        self.second = second
+
+    fn dump(self):
+        print(self.first, self.second)
+
+fn DoNothing(poop: String) -> String:
+    return poop
+
+fn sum_up_to(sumTo: Int) -> Int:
+    var sum: Int = 0
+    for i in range(sumTo):
+        sum += i
+    return sum
+
+def main():
+    print(DoNothing("69"))
+    print("testing structs")
+    var pairs: String = MyPair(1, 2)
+    pairs.dump()
+
+    var sum: Int = sum_up_to(1000000)
+    print(sum)
+
+print(kjdkd)
