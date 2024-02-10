@@ -26,5 +26,3 @@ def main():
 
     var sum: Int = sum_up_to(1000000)
     print(sum)
-
-print(kjdkd)
